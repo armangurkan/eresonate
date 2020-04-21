@@ -18,31 +18,31 @@ module.exports = {
 						secure: false
 					}
 		},
-		filename: 'bundle.js'
+		filename: 'bundle.js',
 	},
 	plugins: [
-			new CleanWebpackPlugin(),
-			new HtmlWebpackPlugin({
-				title: 'Eresonate',
-				template: './client/index.html'
-			})
+		new CleanWebpackPlugin(),
+		new HtmlWebpackPlugin({
+			title: 'Code Compete',
+			template: './client/index.html'
+		})
 	],
-	mode: precess.env.NODE_ENV,
+	mode: process.env.NODE_ENV,
 	output: {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'build'),
-		publicPath: '/build/'
+		publicPath: '/build/',
 	},
 	module: {
 		rules: [
 			{
 				test: /\.(js|jsx)$/,
-				exclude: /node_modules/, rules:,
+				exclude: /node_modules/,
 				use: {
 					loader: 'babel-loader',
 					options: {
 						presets: ['@babel/preset-env', '@babel/preset-react']
-					},
+					}
 				}
 			},
 			{
@@ -52,8 +52,8 @@ module.exports = {
 			},
 			{
 				test: /\.(png|woff|woff2|eot|ttf|svg|otf|jpg|gif)$/,
-				use:['url-loader?limit=10000']
-			}
+				use: ['url-loader?limit=10000']
+			},
 		]
 	}
 };
