@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -22,4 +24,37 @@ html, body {
     width: auto;
     height: 258px;
     background: #292c32;
+}
+
+.short-input {
+    width: 345px;
+    color:white;
+    font-family: Rubik, sans-serif;
+    height: 40px;
+    opacity: 0.6;
+    border-radius: 8px;
+    border: solid 1px rgba(255, 255, 255, 0.6);
+    background: inherit;
+}
+
+label {
+    width: 70px;
+    height: 21px;
+    opacity: 0.87;
+    font-family: Rubik, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: var(--white);
+}
+
+input[type="submit"] {
+    width: 345px;
+    border-radius: 8px;
+    height: 40px;
+    background: #5b9af8;
+    border: solid 1px #5b9af8;
 }

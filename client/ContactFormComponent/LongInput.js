@@ -1,11 +1,16 @@
 import React from 'react';
 
 
-const LongInput = () => {
+const LongInput = (props) => {
 	return (
-			<div className="long-input">
-				LONG
-			</div>
+		<input
+				type="textarea"
+				onChange = {props.setLocation}
+				value = {props.newLocation}
+				className="long-input"
+				key={props.key}
+				id={props.id}
+		/>
 	)
 }
 
