@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background: #191b1e;
+    color: white
+}
+
+.header {
+    width: auto;
+    height: 64px;
+    background: #292c32;
+}
+.contact-form {
+    height:70vh;
+}
+
+.footer {
+    width: auto;
+    height: 258px;
+    background: #292c32;
+}

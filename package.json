@@ -20,7 +20,8 @@
     "react": "^16.13.1",
     "express": "~4.17.1",
     "react-dom": "^16.13.1",
-    "cookie-parser": "^1.4.5"
+    "cookie-parser": "^1.4.5",
+    "uuid": "^7.0.3"
   },
   "devDependencies": {
     "react-hot-loader": "^4.12.20",
