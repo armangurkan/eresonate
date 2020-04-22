@@ -6,11 +6,16 @@ const LongInput = (props) => {
 		<label htmlFor="">
 			{props.labelValue}
 			<textarea
-				onChange = {props.setLocation}
-				value = {props.newLocation}
+				value={props.initial}
 				className="long-input"
+				onChange={e => {
+					const existingErrorMessage = e.target.parentElement.querySelector('.errormessagediv');
+					if(existingErrorMessage) existingErrorMessage.remove();
+					props.handler(e.target.value);
+				}}
 				key={props.key}
 				id={props.id}
+				required
 			/>
 		</label>
 	)

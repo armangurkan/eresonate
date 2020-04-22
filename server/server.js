@@ -18,7 +18,7 @@ const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
 
 
-
+console.log('I go the message')
 
 if(process.env.NODE_ENV === 'production') {
 	app.use('/build', express.static(path.join(__dirname, '../build')));
@@ -29,7 +29,7 @@ if(process.env.NODE_ENV === 'production') {
 	});
 }
 
-app.post('/', async (req, res) => {
+app.post('/send_report', async (req, res) => {
 	const post = req.body;
 	const dataLocation = `${ __dirname }/data/posts.json`;
 	const data = await readFile(`${ __dirname }/data/posts.json`, 'utf-8');
