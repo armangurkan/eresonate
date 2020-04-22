@@ -7,6 +7,7 @@ const App = () => {
 	return (
 			<div>
 				<Header />
+				<div className="titleBlock">Report A Problem</div>
 				<ContactForm />
 				<Footer />
 			</div>

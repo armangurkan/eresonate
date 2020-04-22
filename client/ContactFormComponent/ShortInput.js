@@ -7,8 +7,8 @@ const ShortInput = (props) => {
 			{ props.labelValue }
 			<input
 					type="text"
-					onChange = {props.setLocation}
-					value = {props.newLocation}
+					// onChange = {}
+					// value = {}
 					className="short-input"
 					key={props.key}
 					id={props.id}
