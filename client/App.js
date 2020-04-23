@@ -5,12 +5,12 @@ import ContactForm from './ContactFormComponent/ContactForm.js'
 
 const App = () => {
 	return (
-			<div>
+			<React.Fragment>
 				<Header />
 				<div className="titleBlock">Report A Problem</div>
 				<ContactForm />
 				<Footer />
-			</div>
+			</React.Fragment>
 	)
 }
 
