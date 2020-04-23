@@ -12,15 +12,18 @@ const Footer = () => {
 					<LinkedinLogo />
 					<IgLogo />
 				</div>
-				<div className='links'>
-					<a className="venue-claim" href="">Claim Your Venue</a>
-					<a className="venue-login" href="">Venue Log In</a>
-					<a className="terms-conditions" href=""> Terms and Conditions</a>
-					<a className="privacy-policy" href="">Privacy Policy</a>
+				<div className="lower-footer-wrapper">
+					<div className='links'>
+						<a className="venue-claim" href="">Claim Your Venue</a>
+						<a className="venue-login" href="">Venue Log In</a>
+						<a className="terms-conditions" href=""> Terms and Conditions</a>
+						<a className="privacy-policy" href="">Privacy Policy</a>
+					</div>
+					<div className='probbutton'>
+						Report a Problem
+					</div>
 				</div>
-				<div className='probbutton'>
-					Report a Problem
-				</div>
+				
 			</div>
 	);
 }
