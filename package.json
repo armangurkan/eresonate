@@ -18,7 +18,7 @@
   "dependencies": {
     "mongoose": "^5.9.10",
     "react": "^16.13.1",
-    "express": "~4.17.1",
+    "express": "~4.17.3",
     "react-dom": "^16.13.1",
     "cookie-parser": "^1.4.5",
     "uuid": "^7.0.3"
